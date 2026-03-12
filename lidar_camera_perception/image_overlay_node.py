@@ -85,7 +85,7 @@ class ImageOverlayNode(Node):
         for track in self.latest_tracks:
             pos = track.pose.position
             dim = track.scale
-            dist = float(np.sqrt(pos.x**2 + pos.y**2))
+            dist = float(np.sqrt(pos.x**2 + pos.y**2 + pos.z**2))
             
             corners = []
             for dx in [-dim.x/2, dim.x/2]:

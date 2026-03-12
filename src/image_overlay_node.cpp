@@ -139,7 +139,7 @@ private:
         for (const auto& track : latest_tracks_) {
             auto pos = track.pose.position;
             auto dim = track.scale;
-            double dist = std::sqrt(pos.x*pos.x + pos.y*pos.y);
+            double dist = std::sqrt(pos.x*pos.x + pos.y*pos.y + pos.z*pos.z);
 
             std::vector<cv::Point2f> corners;
             double dx_vals[] = {-dim.x/2, dim.x/2};
