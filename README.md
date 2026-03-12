@@ -79,7 +79,7 @@ To run this pipeline, you need the KITTI Raw Data. This project using the `2011_
 Clone this package into the `src` directory of your ROS 2 workspace and build it:
 ```bash
 cd ~/ros2_ws/src
-git clone [https://github.com/YOUR_USERNAME/lidar_camera_perception.git](https://github.com/YOUR_USERNAME/lidar_camera_perception.git)
+git clone https://github.com/lim425/ros2_lidar_camera_perception.git
 cd ~/ros2_ws
 colcon build --packages-select lidar_camera_perception
 source install/setup.bash
